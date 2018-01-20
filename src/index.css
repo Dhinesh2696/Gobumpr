@@ -1,0 +1,253 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  transition: background-color .5s;
+  margin: 0;
+}
+
+h3{
+  color: black;
+  text-align:center;
+  text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+}
+
+li{
+  cursor: pointer;
+  list-style: none;
+  display: block;
+  border: 1px solid black;
+  background: #fff;
+  margin: 1% 5%;
+  padding: 1%;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+}
+li:hover{
+  background: rgba(144, 144, 130, 0.47);
+  BORDER:1px solid rgba(93, 88, 88, 0);
+}
+/*button{*/
+  /*-webkit-appearance: none;*/
+  /*background: white;*/
+  /*border: 1px solid black;*/
+  /*border-radius: 5px;*/
+  /*padding: 0.5em;*/
+  /*box-shadow: 0px 1px 5px rgba(0,0,0,0.5);*/
+  /*display:inline-block;*/
+  /*margin-right:5%;*/
+  /*margin-bottom:25px;*/
+  /*cursor:pointer;*/
+/*}*/
+/*button:hover{*/
+  /*color: #fff;*/
+  /*background: rgb(0, 136, 255);*/
+/*}*/
+/*button:active{*/
+  /*box-shadow: inset 0px 1px 5px rgba(0,0,0,0.5);*/
+/*}*/
+/*button:focus{outline:0;}*/
+/*.selection{*/
+  /*text-align:right;*/
+/*}*/
+.fa{
+  margin-right: 5px;
+}
+.selection ul{
+  border: 1px solid #2196F3;
+  background: #fff;
+  margin: 1% 5%;
+  padding: 2% 4%;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+}
+.selection li{
+  text-align:left;
+  cursor: auto;
+  display: block;
+  border: none;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+.bold,.bold:hover {
+  font-weight: bolder;
+  color: #fff;
+  background: rgb(0, 136, 255);
+  border: 1px solid #00BCD4;
+}
+#header{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px;
+
+}
+#content{
+  text-align: center;
+  margin: 100px;
+  background-color: white;
+  height: 369px;
+  width: 369px;
+  z-index: 10;
+  }
+#lm{
+  margin-left: -25px;
+  margin-right: 20px;
+}
+#lp{
+  margin-left: -20px;
+}
+#im:focus,#ip:focus{
+  border: 2px solid cornflowerblue;
+}
+.logout {
+  text-align: right;
+
+}
+.fa {
+  margin-right: 4px;
+  margin-left: 10px;
+}
+#fam{
+  margin-right: 4px;
+  margin-left: -17px;
+  left: 170px;
+  top: 3px;
+  z-index: 2;
+  position: relative;
+  font-size: 21px;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+span {
+  font-size:30px;
+  cursor:pointer;
+}
+
+#contactForm {
+  display: none;
+  border: 6px solid cornflowerblue;
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+
+}
+#close{
+  top: -105px;
+  left: 178px;
+  position: relative;
+}
+
+#adde{
+  position: relative;
+  top: -39px;
+}
+
+#delete{
+  position: relative;
+  left: -139px;
+  top: 13px;
+}
+#closebutt{
+  position: relative;
+  top: 10px;
+}
+.main {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  pointer-events: none;
+
+
+}
+#edit{
+  position: relative;
+  left: -40px;
+  top: 11px;
+}
+.nav{
+  height: 68vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/pizza3.jpg") no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.drop-search{
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content:center;
+ margin: 20px;
+
+}
+#bottomDiv{
+  width: 100%;
+  height: 600px;
+  display: none;
+}
+.above-content{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height:100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/login-back.jpg")
+}
+#content1{
+  text-align: center;
+  margin: 100px;
+  background-color: white;
+  height: 416px;
+  width: 369px;
+  z-index: 10;
+  display: none;
+}
