@@ -63,7 +63,7 @@ constructor(){
            })
    }
     fetchdata() {
-        return fetch('http://192.168.1.20:3000/users')
+        return fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users')
             .then(function (res) {
                 return res.json();
             }).catch(function(ex) {
@@ -111,7 +111,7 @@ logout=(e)=>{
         })};
     fetchHotel(name){
         this.refs.autocomplete.setState({searchText: ''});
-        return fetch('http://192.168.1.20:3000/users/'+name)
+        return fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users/'+name)
             .then(function (res) {
                 return res.json();
             }).catch(function(ex) {
@@ -120,7 +120,7 @@ logout=(e)=>{
     }
     fetchReview(name){
 
-         return fetch('http://192.168.1.20:3000/users/review/'+name)
+         return fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users/review/'+name)
             .then(function (res) {
                 return res.json();
             }).catch(function(ex) {
@@ -151,7 +151,7 @@ logout=(e)=>{
         }
     fetchDes(name){
        console.log(name);
-        return fetch('http://192.168.1.20:3000/users/desc/'+name)
+        return fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users/desc/'+name)
             .then(function(res) {
                 return res.json();
             }).catch(function(ex) {
@@ -164,7 +164,7 @@ logout=(e)=>{
             var name=this.state.selectedHotel;
             var content=document.getElementById('desc').value;
             console.log("post"+this.state.selectedHotel)
-        fetch('http://192.168.1.20:3000/users/post/', {
+        fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users/post/', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
