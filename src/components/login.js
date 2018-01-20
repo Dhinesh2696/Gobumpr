@@ -29,7 +29,7 @@ export default class Login extends React.Component {
     getlogin(mob, pwd) {
         var that;
         console.log("in getlogin" + " " + mob + " " + pwd);
-        fetch('http://192.168.1.20:3000/users/login', {
+        fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -98,7 +98,7 @@ export default class Login extends React.Component {
         var phoneno1 = /^\d{10}$/;
         var mob = document.getElementById("im1").value;
 
-        fetch('http://192.168.1.20:3000/users/sign', {
+        fetch('http://ec2-13-127-109-115.ap-south-1.compute.amazonaws.com:3000/users/sign', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
