@@ -187,7 +187,7 @@ export default class Login extends React.Component {
                                     id={"bc"}
                                     // style={styles.raisedButton}
                                 />
-                                <p>Not registered.<FlatButton label="Sign In" id={'signin'}
+                                <p>Not registered.<FlatButton label="Sign Up" id={'signin'}
                                                               labelStyle={{textTransform: 'capitalize'}}
                                                               onClick={this.signin} style={{color: '#A71823'}}/></p>
                             </MuiThemeProvider>
